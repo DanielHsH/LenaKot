@@ -1,0 +1,250 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)\r\n"
+    "LANGUAGE 13, 1\r\n"
+    "#pragma code_page(1255)\r\n"
+    "#include ""res\\IPcourseEx.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\IPcourseEx.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Hebrew resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About LenaKot"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "IMPR course examples",IDC_STATIC,7,7,119,8,SS_NOPREFIX
+    LTEXT           " LenaKot 1.3, Copyright (C) 2009",IDC_STATIC,39,29,121,10,SS_SUNKEN
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           " Coded By: Daniel Herman Shmulyan",IDC_STATIC,39,19,121,10,SS_SUNKEN
+    CONTROL         "You are allowed to use this program ONLY for educational purposes",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,7,43,221,9
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,198,27,16,10
+END
+
+IDD_IPCOURSEEX_DIALOG DIALOGEX 0, 0, 544, 83
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LenaKot, by Daniel Herman-Shmulyan"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Histograms",IDC_HIST_BUTTON,8,9,55,12
+    PUSHBUTTON      "Edge Detection",IDC_EDGEDET_BUTTON,68,21,55,12
+    PUSHBUTTON      "Derivative",IDC_DERIVE_BUTTON2,68,9,55,12
+    GROUPBOX        "Filters",IDC_STATIC,67,0,58,48,BS_CENTER
+    GROUPBOX        "Characteristics",IDC_STATIC,6,0,58,48,BS_CENTER
+    EDITTEXT        IDC_COMMAND_TEXT,243,57,292,20,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL | WS_GROUP
+    LTEXT           "Instructions:",IDC_STATIC,199,60,43,13
+    GROUPBOX        "Clustering & Segmentation",IDC_STATIC,305,0,115,47,BS_CENTER
+    PUSHBUTTON      "K-means",IDC_KMEANS_BUTTON,308,8,55,12
+    GROUPBOX        "Advanced algorithms",IDC_STATIC,423,0,114,47,BS_CENTER
+    PUSHBUTTON      "Inpaint",IDC_INPAINT_BUTTON,480,20,55,12
+    PUSHBUTTON      "Denoising",IDC_DENOISING_BUTTON,68,34,55,12
+    PUSHBUTTON      "HSV",IDC_HSV_BUTTON2,8,35,55,12
+    GROUPBOX        "Morphology",IDC_STATIC,127,0,58,48,BS_CENTER
+    PUSHBUTTON      "Operations",IDC_MORPHO_BUTTON,128,9,55,12
+    PUSHBUTTON      "Dist trans",IDC_DIST_BUTTON,128,21,55,12
+    GROUPBOX        "Transforms",IDC_STATIC,188,0,116,47,BS_CENTER
+    PUSHBUTTON      "FFT",IDC_FFT_BUTTON,189,33,55,12
+    PUSHBUTTON      "Hough",IDC_HOUGH_BUTTON,248,20,55,12
+    PUSHBUTTON      "Affine",IDC_AFFINE_BUTTON2,189,7,55,12
+    PUSHBUTTON      "Watershed",IDC_WATER_BUTTON,308,20,55,12
+    PUSHBUTTON      "Pyramid",IDC_PYRAMID_BUTTON,248,8,55,12
+    PUSHBUTTON      "Resolution",IDC_RES_BUTTON,8,22,55,12
+    PUSHBUTTON      "Pyr. Segment",IDC_PYRSEG_BUTTON,364,9,55,12
+    PUSHBUTTON      "Flood Fill",IDC_FLOOD_BUTTON,364,21,55,12
+    PUSHBUTTON      "Elipse",IDC_ELIPSE_BUTTON,308,33,55,12
+    PUSHBUTTON      "Motion Det.",IDC_MOTDET_BUTTON,424,34,55,12
+    PUSHBUTTON      "Kalman",IDC_KALMAN_BUTTON,480,8,55,12
+    PUSHBUTTON      "Image Match",IDC_SIFT_BUTTON,424,20,55,12
+    PUSHBUTTON      "Contour",IDC_CONTOUR_BUTTON2,364,33,55,12
+    PUSHBUTTON      "Fusion",IDC_FUSION_BUTTON3,424,8,55,12
+    PUSHBUTTON      "FishEye",IDC_FISHEYE_BUTTON,248,33,55,12
+    PUSHBUTTON      "Perspective",IDC_PERSPECT_BUTTON,189,20,55,12
+    CONTROL         "Use Image:",IDC_USEIM_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,59,48,10
+    COMBOBOX        IDC_PICCOMBO,57,57,63,12,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,6,51,531,28,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Pencil Sketch",IDC_PENCIL_BUTTON,480,34,55,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Demo Version"
+            VALUE "CompanyName", "VIP(c)"
+            VALUE "FileDescription", "Demo for image processing course"
+            VALUE "FileVersion", "1.1.0.0"
+            VALUE "InternalName", "IPcourseEx.exe"
+            VALUE "LegalCopyright", "<Daniel Herman Shmulyan>.  All rights reserved."
+            VALUE "OriginalFilename", "LenaKot.exe"
+            VALUE "PrivateBuild", "Visual Studio 2005, Release, MFC in static library"
+            VALUE "ProductName", "LenaKot"
+            VALUE "ProductVersion", "1.1.0.0"
+            VALUE "SpecialBuild", "Visual Studio 2005, Release, MFC in static library"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_IPCOURSEEX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 537
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About LenaKot"
+END
+
+#endif    // Hebrew resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+LANGUAGE 13, 1
+#pragma code_page(1255)
+#include "res\IPcourseEx.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
